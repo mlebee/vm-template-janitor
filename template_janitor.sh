@@ -63,7 +63,7 @@ rm -f /etc/ssh/ssh_host*
 
 # create temporary rc.local 
 echo " * create temporary rc.local"
-sed -i '$ i dpkg-reconfigure openssh-server\ndd if=/dev/random of=/etc/varnish/secret count=1\nmv /etc/rc.local.orig /etc/rc.local' /etc/rc.local
+sed -i '$ i dpkg-reconfigure openssh-server\nmv /etc/rc.local.orig /etc/rc.local' /etc/rc.local
 
 # remove history
 echo " * remove users history"
