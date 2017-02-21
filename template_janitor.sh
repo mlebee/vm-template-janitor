@@ -22,11 +22,6 @@ echo
 ## begin cleaning
 echo "Cleaning started"
 
-# remove monit id & state files
-echo " * remove monit id & state files"
-rm -f /var/lib/monit/monit.state
-rm -f /var/lib/monit/monit.id
-
 # clean apt cache
 echo " * clean apt cache"
 apt-get  clean
